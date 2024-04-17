@@ -1,0 +1,87 @@
+body {
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    height: 0;
+}
+
+.judul {
+    color: white;
+    text-align: center;
+    height: 80px;
+}
+
+.gameinti {
+    border: 1px solid white;
+    display: flex;
+    margin-top: 10px;
+    width: 80%;
+    margin: auto;
+    height: 470px;
+}
+
+.gameboard {
+    border: 1px solid white;
+    width: 30%;
+    color: white;
+    text-align: center;
+}
+
+.gamescore {
+    border: 1px solid white;
+    color: white;
+    width: 100%;
+    padding: 30px;
+    min-height: 10px;
+    border-radius: 10px; /* Sudut border */
+    user-select: none; /* Mencegah pemilihan teks saat diklik */
+    text-align: center; /* Teks rata tengah */
+    
+}
+.gamescore.clicked {
+    background-color: green; /* Warna saat diklik */
+}
+
+.hex {
+    float: left;
+    margin-left: 2px;
+    margin-bottom: -26px;cursor: pointer;
+}
+
+.hex .top {
+    width: 0;
+    border-bottom: 30px solid blue;
+    border-left: 32px solid transparent;
+    border-right: 32px solid transparent;
+}
+
+.hex .middle {
+    width: 64px;
+    height: 40px;
+    background: white;
+}
+
+.hex .bottom {
+    width: 0;
+    border-top: 30px solid aqua;
+    border-left: 32px solid transparent;
+    border-right: 32px solid transparent;
+}
+
+.hex-row {
+    clear: left;
+}
+
+.hex-row.even {
+    margin-left: 33px;
+}
+
+.text {
+    padding: 100px;
+    margin: 26px;
+    margin-left: 210px;
+}
+
+.hidden {
+    display: none;
+}

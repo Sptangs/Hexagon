@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <link rel="icon" type="image/x-icon" href="gambar.png">    
+</head>
+<body>
+    <div class="judul">
+        <h1>Hexagon</h1>
+    </div>
+    <div class="container" id="welcomeScreen">
+        <h1>Welcome to Hexagon</h1>
+        <p>Choose your opponent:</p>
+        <input type="radio" id="player2" name="opponent" value="player2">
+        <label for="player2">Player 2</label>
+        <input type="radio" id="bot" name="opponent" value="bot">
+        <label for="bot">Bot</label>
+        <p>Choose the difficulty level:</p>
+        <select id="levelSelect">
+            <option value="easy">Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
+        </select>
+        <p>Enter Player 1's name:</p>
+        <input type="text" id="player1Name">
+        <p id="player2Prompt" style="display: none;">Enter Player 2's name:</p>
+        <input type="text" id="player2Name" style="display: none;">
+        <button id="player2Button" onclick="showPlayer2Input()">Compete with Player 2</button>
+        <!-- Mengarahkan ke game.html saat tombol "Start" ditekan -->
+        <button id="startButton" onclick="window.location.href = 'game.html'">Start</button>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>

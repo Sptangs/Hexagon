@@ -1,0 +1,98 @@
+body {
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    height: 0;
+}
+
+.judul {
+    color: white;
+    text-align: center;
+    height: 80px;
+}
+
+.container {
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    background-color: black;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: white;
+    
+    height: 350px;
+}
+
+.container h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.container p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.container input[type="text"],
+.container button {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.container input[type="text"] {
+    width: 100%;
+}
+
+.container button {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+.container button:hover {
+    background-color: #0056b3;
+}
+
+#startButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 1px solid white;
+}
+
+/* Level select styles */
+#levelSelect {
+    padding: 10px;
+    width: 30%;
+    margin-left: 5px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    appearance: none; /* Remove default appearance */
+    -webkit-appearance: none; /* For older versions of WebKit */
+    background-image: url('down-arrow.png'); /* Custom dropdown arrow */
+    background-repeat: no-repeat;
+    background-position: right 10px center; /* Position the arrow */
+    background-size: 20px; /* Size of the arrow */
+    cursor: grab;
+}
+
+/* Level select dropdown arrow on hover */
+#levelSelect:hover {
+    background-color: grey; /* Change background color on hover */
+}
+
+/* Level select options */
+#levelSelect option {
+    background-color: #fff;
+    color: black;
+    text-align: center;
+}
+
+/* Level select dropdown arrow */
+#levelSelect::-ms-expand {
+    display: none; /* Remove default arrow on IE */
+}
